@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A34E9EE1F8FF53C0065BF17 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */; };
 		7A444B991F880111001DFE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A444B981F880111001DFE1A /* AppDelegate.swift */; };
 		7A444B9B1F880111001DFE1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A444B9A1F880111001DFE1A /* ViewController.swift */; };
 		7A444B9E1F880111001DFE1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A444B9C1F880111001DFE1A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		7A444B951F880111001DFE1A /* FirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A444B981F880111001DFE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A444B9A1F880111001DFE1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A34E9EC1F8FF4C90065BF17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A444B9C1F880111001DFE1A /* Main.storyboard */,
+				7A444BA11F880111001DFE1A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7A444B8C1F880111001DFE1A = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				7A444BAB1F8812A4001DFE1A /* Controller */,
-				7A444B9C1F880111001DFE1A /* Main.storyboard */,
-				7A444BA11F880111001DFE1A /* LaunchScreen.storyboard */,
+				7A34E9EC1F8FF4C90065BF17 /* View */,
 				7A444B9F1F880111001DFE1A /* Assets.xcassets */,
 				7A444BAC1F8812AC001DFE1A /* Settings */,
 			);
@@ -68,6 +78,7 @@
 			children = (
 				7A444B981F880111001DFE1A /* AppDelegate.swift */,
 				7A444B9A1F880111001DFE1A /* ViewController.swift */,
+				7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 			files = (
 				7A444B9B1F880111001DFE1A /* ViewController.swift in Sources */,
 				7A444B991F880111001DFE1A /* AppDelegate.swift in Sources */,
+				7A34E9EE1F8FF53C0065BF17 /* SecondScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
