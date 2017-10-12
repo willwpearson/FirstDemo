@@ -27,12 +27,24 @@
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfY-hV-bQM"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-Do-QD1">
+                                <rect key="frame" x="127" y="371" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Black"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="8w6-wg-laB"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="0PP-ff-UtE" id="eFG-z8-B4U"/>
+                        <outlet property="firstSegment" destination="CSF-Do-QD1" id="bhe-Bt-m30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -56,8 +56,8 @@
 			children = (
 				7A444BAB1F8812A4001DFE1A /* Controller */,
 				7A444B9C1F880111001DFE1A /* Main.storyboard */,
-				7A444B9F1F880111001DFE1A /* Assets.xcassets */,
 				7A444BA11F880111001DFE1A /* LaunchScreen.storyboard */,
+				7A444B9F1F880111001DFE1A /* Assets.xcassets */,
 				7A444BAC1F8812AC001DFE1A /* Settings */,
 			);
 			path = FirstDemo;
@@ -291,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstDemo/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.FirstDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FirstDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FirstDemo/Settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.FirstDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

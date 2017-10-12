@@ -36,7 +36,20 @@ class ViewController: UIViewController
         return newColor
     }
     
+    @IBOutlet weak var firstSegment: UISegmentedControl!
     
+    
+    @IBAction func segmentMethod(_ sender: UISegmentedControl)
+    {
+        if (view.backgroundColor == .black)
+        {
+            view.backgroundColor = .red
+        }
+        else
+        {
+            view.backgroundColor = .black
+        }
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
