@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    private lazy var colorTool : ColorTools = ColorTools()
     @IBOutlet weak var firstButton: UIButton!
     
     @IBAction func firstMethod(_ sender: UIButton)
@@ -22,19 +24,9 @@ class ViewController: UIViewController
         {
             firstButton.backgroundColor = .orange
         }
-        view.backgroundColor = createRandomColor()
+        view.backgroundColor = colorTool.createRandomColor()
     }
     
-    private func createRandomColor() -> UIColor
-    {
-        let newColor :UIColor
-        let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.0)
-        let blueValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
-        
-        return newColor
-    }
     
     @IBOutlet weak var firstSwitch: UISwitch!
     
@@ -46,7 +38,7 @@ class ViewController: UIViewController
         }
         else
         {
-            view.backgroundColor = createRandomColor()
+            view.backgroundColor = colorTool.createRandomColor()
         }
     }
     
@@ -56,7 +48,7 @@ class ViewController: UIViewController
     {
         if(firstSlider.value <= 1)
         {
-            view.backgroundColor = createRandomColor()
+            view.backgroundColor = colorTool.createRandomColor()
         }
         else
         {

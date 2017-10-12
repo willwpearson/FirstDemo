@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A34E9EE1F8FF53C0065BF17 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */; };
+		7A34E9F11F8FF9CE0065BF17 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E9F01F8FF9CE0065BF17 /* ColorTools.swift */; };
 		7A444B991F880111001DFE1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A444B981F880111001DFE1A /* AppDelegate.swift */; };
 		7A444B9B1F880111001DFE1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A444B9A1F880111001DFE1A /* ViewController.swift */; };
 		7A444B9E1F880111001DFE1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A444B9C1F880111001DFE1A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
+		7A34E9F01F8FF9CE0065BF17 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 		7A444B951F880111001DFE1A /* FirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A444B981F880111001DFE1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A444B9A1F880111001DFE1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7A34E9EF1F8FF9A90065BF17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A34E9F01F8FF9CE0065BF17 /* ColorTools.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7A444B8C1F880111001DFE1A = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		7A444B971F880111001DFE1A /* FirstDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7A34E9EF1F8FF9A90065BF17 /* Model */,
 				7A444BAB1F8812A4001DFE1A /* Controller */,
 				7A34E9EC1F8FF4C90065BF17 /* View */,
 				7A444B9F1F880111001DFE1A /* Assets.xcassets */,
@@ -166,6 +177,7 @@
 				7A444B9B1F880111001DFE1A /* ViewController.swift in Sources */,
 				7A444B991F880111001DFE1A /* AppDelegate.swift in Sources */,
 				7A34E9EE1F8FF53C0065BF17 /* SecondScreenController.swift in Sources */,
+				7A34E9F11F8FF9CE0065BF17 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
