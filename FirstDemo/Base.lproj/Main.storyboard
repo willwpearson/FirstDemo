@@ -34,12 +34,20 @@
                                     <action selector="switchMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="wkE-dV-Kxl"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hrU-fm-uIe">
+                                <rect key="frame" x="14" y="265" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="GHV-13-xSY"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="firstButton" destination="0PP-ff-UtE" id="eFG-z8-B4U"/>
+                        <outlet property="firstSlider" destination="hrU-fm-uIe" id="Egg-pN-0Cy"/>
                         <outlet property="firstSwitch" destination="2wP-Bh-rn0" id="aCS-Jm-A5E"/>
                     </connections>
                 </viewController>

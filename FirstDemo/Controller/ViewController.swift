@@ -40,13 +40,27 @@ class ViewController: UIViewController
     
     @IBAction func switchMethod(_ sender: Any)
     {
-        if(firstSwitch.isEnabled)
+        if(firstSwitch.isOn)
         {
             view.backgroundColor = .black
         }
         else
         {
             view.backgroundColor = createRandomColor()
+        }
+    }
+    
+    @IBOutlet weak var firstSlider: UISlider!
+    
+    @IBAction func sliderMethod(_ sender: Any)
+    {
+        if(firstSlider.value > 0.5)
+        {
+            view.backgroundColor = createRandomColor()
+        }
+        else
+        {
+            view.backgroundColor = .white
         }
     }
     
