@@ -36,20 +36,21 @@ class ViewController: UIViewController
         return newColor
     }
     
-    @IBOutlet weak var firstSegment: UISegmentedControl!
+    @IBOutlet weak var firstSwitch: UISwitch!
     
-    
-    @IBAction func segmentMethod(_ sender: UISegmentedControl)
+    @IBAction func switchMethod(_ sender: Any)
     {
-        if (view.backgroundColor == .black)
-        {
-            view.backgroundColor = .red
-        }
-        else
+        if(firstSwitch.isEnabled)
         {
             view.backgroundColor = .black
         }
+        else
+        {
+            view.backgroundColor = createRandomColor()
+        }
     }
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
