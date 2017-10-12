@@ -54,7 +54,7 @@ class ViewController: UIViewController
     
     @IBAction func sliderMethod(_ sender: Any)
     {
-        if(firstSlider.value > 0.5)
+        if(firstSlider.value <= 1)
         {
             view.backgroundColor = createRandomColor()
         }
