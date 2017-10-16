@@ -74,7 +74,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pws-gb-BKv">
                                 <rect key="frame" x="99" y="318" width="176" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Change Screens"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="FuX-pK-zD2"/>
                                 </connections>
