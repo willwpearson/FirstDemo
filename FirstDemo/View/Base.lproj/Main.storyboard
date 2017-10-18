@@ -97,11 +97,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrV-PX-k8V">
-                                <rect key="frame" x="172" y="228" width="30" height="30"/>
+                                <rect key="frame" x="138" y="228" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="First"/>
+                                <state key="normal" title="Change Image"/>
                                 <connections>
                                     <action selector="firstButtonMethod:" destination="bf6-ex-h8D" eventType="touchUpInside" id="RR1-dg-ZSG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-Nb-s1w">
+                                <rect key="frame" x="161" y="266" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Second"/>
+                                <connections>
+                                    <action selector="secondButtonMethod:" destination="bf6-ex-h8D" eventType="touchUpInside" id="3gi-Sn-mtz"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zkT-Ha-Qvp">
@@ -112,23 +120,15 @@
                                 </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="amS-Zh-EiQ">
-                                <rect key="frame" x="67" y="355" width="240" height="128"/>
+                                <rect key="frame" x="57" y="355" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbM-T2-efS">
-                                <rect key="frame" x="131" y="491" width="113" height="30"/>
+                                <rect key="frame" x="131" y="50" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Screens"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ZeZ-Zk-jnE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-Nb-s1w">
-                                <rect key="frame" x="161" y="266" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Second"/>
-                                <connections>
-                                    <action selector="secondButtonMethod:" destination="bf6-ex-h8D" eventType="touchUpInside" id="3gi-Sn-mtz"/>
                                 </connections>
                             </button>
                         </subviews>

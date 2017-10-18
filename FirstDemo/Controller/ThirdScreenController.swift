@@ -18,10 +18,15 @@ class ThirdScreenController: UIViewController
     private lazy var color : ColorTools = ColorTools()
     private var imageCounter : Int = 0
    
-    public override func viewDidLoad()
+    public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
         view.backgroundColor = color.createRandomColor()
+    }
+    
+    public override func didReceiveMemoryWarning() -> Void
+    {
+        super.didReceiveMemoryWarning()
     }
     
     @IBAction func firstButtonMethod(_ sender: UIButton)
@@ -29,6 +34,7 @@ class ThirdScreenController: UIViewController
         changeImage()
         view.backgroundColor = color.createRandomColor()
     }
+    
     private func changeImage() -> Void
     {
         if (imageCounter > 2)
