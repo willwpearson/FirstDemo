@@ -10,14 +10,13 @@ import UIKit
 
 class ThirdScreenController: UIViewController
 {
-    private lazy var color : ColorTools = ColorTools()
-    private var imageCounter : Int = 0
-    
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var firstSlider: UISlider!
     @IBOutlet weak var firstImage: UIImageView!
     
+    private lazy var color : ColorTools = ColorTools()
+    private var imageCounter : Int = 0
     
     @IBAction func firstButtonMethod(_ sender: UIButton)
     {
@@ -33,7 +32,4 @@ class ThirdScreenController: UIViewController
     {
     
     }
-    
-
-    
 }
