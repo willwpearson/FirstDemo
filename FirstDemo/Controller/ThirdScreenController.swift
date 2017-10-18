@@ -17,10 +17,39 @@ class ThirdScreenController: UIViewController
     
     private lazy var color : ColorTools = ColorTools()
     private var imageCounter : Int = 0
+   
+    public override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        view.backgroundColor = color.createRandomColor()
+    }
     
     @IBAction func firstButtonMethod(_ sender: UIButton)
     {
+        changeImage()
+        view.backgroundColor = color.createRandomColor()
+    }
+    private func changeImage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
         
+        if (imageCounter == 0)
+        {
+            firstImage.image = UIImage(named: "Hunter")
+        }
+        else if (imageCounter == 1)
+        {
+            firstImage.image = UIImage(named: "Destiny1")
+        }
+        else
+        {
+            firstImage.image = UIImage(named: "DestinyLogo")
+        }
+        
+        imageCounter += 1
     }
     
     @IBAction func secondButtonMethod(_ sender: UIButton)
