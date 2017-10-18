@@ -14,6 +14,7 @@
 		7A444B9E1F880111001DFE1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A444B9C1F880111001DFE1A /* Main.storyboard */; };
 		7A444BA01F880111001DFE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A444B9F1F880111001DFE1A /* Assets.xcassets */; };
 		7A444BA31F880111001DFE1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A444BA11F880111001DFE1A /* LaunchScreen.storyboard */; };
+		7A5750D21F97CCD200129C6C /* ThirdScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5750D11F97CCD200129C6C /* ThirdScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7A444B9F1F880111001DFE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A444BA21F880111001DFE1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A444BA41F880111001DFE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5750D11F97CCD200129C6C /* ThirdScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				7A444B981F880111001DFE1A /* AppDelegate.swift */,
 				7A444B9A1F880111001DFE1A /* ViewController.swift */,
 				7A34E9ED1F8FF53C0065BF17 /* SecondScreenController.swift */,
+				7A5750D11F97CCD200129C6C /* ThirdScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				7A444B9B1F880111001DFE1A /* ViewController.swift in Sources */,
 				7A444B991F880111001DFE1A /* AppDelegate.swift in Sources */,
 				7A34E9EE1F8FF53C0065BF17 /* SecondScreenController.swift in Sources */,
+				7A5750D21F97CCD200129C6C /* ThirdScreenController.swift in Sources */,
 				7A34E9F11F8FF9CE0065BF17 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
