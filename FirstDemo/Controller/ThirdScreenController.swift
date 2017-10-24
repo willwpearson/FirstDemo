@@ -61,6 +61,11 @@ class ThirdScreenController: UIViewController
         imageCounter += 1
     }
     
+    private func playMusicFile() -> Void
+    {
+        soundPlayer?.play()
+    }
+    
     private func loadAudioFile() -> Void
     {
         if let soundURL = NSDataAsset(name: "PickleRick")
@@ -72,7 +77,7 @@ class ThirdScreenController: UIViewController
                 
                 try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
                 firstSlider.maximumValue = Float ((soundPlayer?.duration)!)
-              //  Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
             }
             catch
             {
@@ -81,9 +86,14 @@ class ThirdScreenController: UIViewController
         }
     }
     
+    @objc private func updateSlider() -> Void
+    {
+        firstSlider.value = Float ((soundPlayer?.currentTime)!)
+    }
+    
     @IBAction func secondButtonMethod(_ sender: UIButton)
     {
-        
+        playMusicFile()
     }
     
     @IBAction func firstSliderMethod(_ sender: UISlider)

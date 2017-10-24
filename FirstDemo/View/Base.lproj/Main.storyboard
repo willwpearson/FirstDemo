@@ -105,9 +105,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-Nb-s1w">
-                                <rect key="frame" x="161" y="266" width="52" height="30"/>
+                                <rect key="frame" x="149" y="266" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Second"/>
+                                <state key="normal" title="Play Sound"/>
                                 <connections>
                                     <action selector="secondButtonMethod:" destination="bf6-ex-h8D" eventType="touchUpInside" id="3gi-Sn-mtz"/>
                                 </connections>
