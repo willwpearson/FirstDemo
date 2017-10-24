@@ -63,7 +63,26 @@ class ThirdScreenController: UIViewController
     
     private func playMusicFile() -> Void
     {
-        soundPlayer?.play()
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                soundPlayer?.pause()
+            }
+            else
+            {
+                soundPlayer?.play()
+            }
+        }
+        
+//        if((soundPlayer?.isPlaying)!)
+//        {
+//            soundPlayer?.pause()
+//        }
+//        else
+//        {
+//            soundPlayer?.play()
+//        }
     }
     
     private func loadAudioFile() -> Void
@@ -94,10 +113,12 @@ class ThirdScreenController: UIViewController
     @IBAction func secondButtonMethod(_ sender: UIButton)
     {
         playMusicFile()
+        view.backgroundColor = color.createRandomColor()
     }
     
     @IBAction func firstSliderMethod(_ sender: UISlider)
     {
-    
+        let seekTime = Double (firstSlider.value)
+        soundPlayer?.currentTime = seekTime
     }
 }
